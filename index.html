@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+<body>
+<img id="a" src="img1.png" alt="img1">
+ 
+
+<!-- script located html document, external script delay loading image.-->
+
+<script>
+var time = new Date();
+var greeting;
+var img = document.getElementById('a').style.display='none';
+
+
+if ( (time.getDate() !==4 && time.getDate() !==9 && time.getDate() !==18 && time.getDate() !==26  && time.getDate() !==31 )) {
+ greeting=document.getElementById('a').style.display='block';
+} else {
+
+greeting= document.getElementById('a').style.display='none';
+}
+
+
+document.image = greeting;
+
+
+
+</script>
+
+
+</body>
+</html>
